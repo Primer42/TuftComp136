@@ -1,0 +1,110 @@
+\documentclass[12pt]{article}
+
+\usepackage{amsmath}    % need for subequations
+\usepackage{graphicx}   % need for figures
+\usepackage{verbatim}   % useful for program listings
+\usepackage{color}      % use if color is used in text
+
+% don't need the following. simply use defaults
+\setlength{\baselineskip}{16.0pt}    % 16 pt usual spacing between lines
+
+\setlength{\parskip}{3pt plus 2pt}
+\setlength{\parindent}{20pt}
+\setlength{\oddsidemargin}{0.5cm}
+\setlength{\evensidemargin}{0.5cm}
+\setlength{\marginparsep}{0.75cm}
+\setlength{\marginparwidth}{2.5cm}
+\setlength{\marginparpush}{1.0cm}
+\setlength{\textwidth}{150mm}
+
+\graphicspath{{../figures/}}
+
+% above is the preamble
+
+\begin{document}
+
+\title{Assignment 3}
+\author{William Richard}
+\maketitle
+
+\section{Regularized Linear Regression}
+
+\subsection{How does $\lambda$ affect the results?}
+As we would expect, for the train data, the MSE approaches the expected value as we increase $\lambda$.  On the test data, the MSE begins to approach the expected value, but at a very small $\lambda$ hits an inflection point and begins to go away from the expected MSE value.  This implies that, for larger $\lambda$, our model has overfit the data, and that the real model should have a small $\lambda$, i.e. a small regularization, and be trained mostly based on the actual trainin  data.
+
+\subsection{How does the choice of $\lambda$ depend on the setting of features or number of examples?}
+
+To explore how the number of examples affects the choice of $\lambda$, please compare figures \ref{fig:1/1000-100} and \ref{fig:1/150(1000)-100}.  Figure \ref{fig:1/150(1000)-100} clearly does better with a smaller $\lambda$ than figure \ref{fig:1/1000-100}.  With fewer examples, the 150(1000)-100 case becomes dominated by $\lambda$, and thus behaves better when $\lambda$ is smaller, or  having a smaller effect on the output.  Alternately, the 1000-100 case has many more examples, and thus can absorb the effects of a larger $\lambda$.  The large $\lambda$ has the added bonus of normalizing the data to a greater extent.
+
+Next, compare figures \ref{fig:1/100-100} and \ref{fig:1/100-10} for the 100-100 and 100-10 cases, respectively.  These two figures would imply that with fewer features, in the 100-10 case, a lower $\lambda$ is better.
+
+\begin{figure}[h]
+\includegraphics[height=.4\textheight]{1/1000-100.eps}
+\label{fig:1/1000-100}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[height=.4\textheight]{1/100-10.eps}
+\label{fig:1/100-10}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[height=.4\textheight]{1/50(1000)-100.eps}
+\label{fig:1/50(1000)-100}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[height=.4\textheight]{1/100(1000)-100.eps}
+\label{fig:1/100(1000)-100}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[height=.4\textheight]{1/150(1000)-100.eps}
+\label{fig:1/150(1000)-100}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[height=.4\textheight]{1/wine.eps}
+\label{fig:1/wine}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[height=.4\textheight]{1/100-100.eps}
+\label{fig:1/100-100}
+\end{figure}
+
+\section{Learning Curves}
+\begin{figure}[h]
+\includegraphics[height=.4\textheight]{2/1000-100-20-20-problem2.eps}
+\label{fig:2/20}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[height=.4\textheight]{2/1000-100-80-20-problem2.eps}
+\label{fig:2/80}
+\end{figure}
+\begin{figure}[h]
+\includegraphics[height=.4\textheight]{2/1000-100-140-20-problem2.eps}
+\label{fig:2/140}
+\end{figure}
+
+With the larger $\lambda$ values, you see much faster stabilization of MSE value with respect to sample size.  This occurs because, with larger $\lambda$, indivdual samples are normalized more, thus there is less noise, and the data matters less, resulting in faster convergence to the final MSE value.
+
+\section{Cross Validation}
+
+\begin{table}[h]
+\begin{tabular}{c||p{3cm}|p{3cm}||p{3cm}|p{3cm}}
+Data Set & Cross Validation  &  & Reg. Lin. Regression &  \\
+ & $\lambda$ & MSE & $\lambda$ & MSE \\
+\hline
+50(1000)-100 & 24 & 5.3 & 8 & 5.541\\
+100(1000)-100 & 30 & 4.840 & 19 & 5.206 \\
+150(1000)-100 & 46 & 4.869 & 23 & 4.849 \\
+1000-100 & 39 & 4.137 & 27 & 4.316 \\
+100-10 & 12 & 4.159 & 8 & 4.160\\
+100-100 & 20 & 4.494 & 22 & 5.078\\
+wine & 3 & 0.642 & 2 & .0625\\
+\end{tabular}
+\label{tab:3}
+\end{table}
+
+In most of the data sets, especially the ones with a large number of examples, the $\lambda$ that was chosen using regularized linear regression was close to the $\lambda$ chosen using cross validation.  When cross validation gave a different result than regularized linear regression, cross validation has produced a vastly superiour result.
+
+\section{Bayesian Linear Regression}
+
+
+
+\end{document}

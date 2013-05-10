@@ -1,0 +1,78 @@
+algorithm& A& B& C& ionosphere\\ 
+generativeSharedCov& 0.952 +/- 0.0175& 0.850 +/- 0.0548& 0.830 +/- 0.0458& 0.855 +/- 0.0592\\ 
+generativeSeperateCov& 0.515 +/- 0.0376& 0.550 +/- 0.1225& 0.515 +/- 0.1566& 0.641 +/- 0.0697\\ 
+fishersLinearDiscriminent& 0.054 +/- 0.0138& 0.150 +/- 0.0806& 0.160 +/- 0.0663& 0.128 +/- 0.0514\\ 
+algorithm&& A&& B&& C&& ionosphere\\ 
+generativeSharedCov& 0.952 +/- 0.0175& 0.850 +/- 0.0548& 0.830 +/- 0.0458& 0.855 +/- 0.0592\\ 
+generativeSeperateCov& 0.515 +/- 0.0376& 0.550 +/- 0.1225& 0.515 +/- 0.1566& 0.641 +/- 0.0697\\ 
+fishersLinearDiscriminent& 0.054 +/- 0.0138& 0.150 +/- 0.0806& 0.160 +/- 0.0663& 0.128 +/- 0.0514\\ 
+algorithm&& A&& B&& C&& ionosphere\\ 
+generativeSharedCov& 0.952 +/- 0.017& 0.850 +/- 0.055& 0.830 +/- 0.046& 0.855 +/- 0.059\\ 
+generativeSeperateCov& 0.515 +/- 0.038& 0.550 +/- 0.122& 0.515 +/- 0.157& 0.641 +/- 0.070\\ 
+fishersLinearDiscriminent& 0.054 +/- 0.014& 0.150 +/- 0.081& 0.160 +/- 0.066& 0.128 +/- 0.051\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+generativeSeperateCov& 0.550 +/- 0.122\\ 
+fishersLinearDiscriminent& 0.150 +/- 0.081\\ 
+algorithm&& A&& B&& C&& ionosphere\\ 
+generativeSharedCov& 0.952 +/- 0.017& 0.850 +/- 0.055& 0.830 +/- 0.046& 0.855 +/- 0.059\\ 
+generativeSeperateCov& 0.515 +/- 0.038& 0.550 +/- 0.122& 0.515 +/- 0.157& 0.641 +/- 0.070\\ 
+fishersLinearDiscriminent& 0.054 +/- 0.014& 0.150 +/- 0.081& 0.160 +/- 0.066& 0.128 +/- 0.051\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+algorithm&& A&& B&& C&& ionosphere\\ 
+generativeSharedCov& 0.952 +/- 0.017& 0.850 +/- 0.055& 0.830 +/- 0.046& 0.855 +/- 0.059\\ 
+generativeSeperateCov& 0.515 +/- 0.038& 0.550 +/- 0.122& 0.515 +/- 0.157& 0.641 +/- 0.070\\ 
+fishersLinearDiscriminent& 0.054 +/- 0.014& 0.150 +/- 0.081& 0.160 +/- 0.066& 0.128 +/- 0.051\\ 
+logisticRegression& 0.485 +/- 0.038& 0.615 +/- 0.074& 0.700 +/- 0.114& 0.661 +/- 0.076\\ 
+algorithm&& B&& C&& ionosphere\\ 
+generativeSharedCov& 0.850 +/- 0.055& 0.830 +/- 0.046& 0.855 +/- 0.059\\ 
+generativeSeperateCov& 0.550 +/- 0.122& 0.515 +/- 0.157& 0.641 +/- 0.070\\ 
+fishersLinearDiscriminent& 0.150 +/- 0.081& 0.160 +/- 0.066& 0.128 +/- 0.051\\ 
+algorithm&& B&& C&& ionosphere\\ 
+generativeSharedCov& 0.850 +/- 0.055& 0.830 +/- 0.046& 0.855 +/- 0.059\\ 
+generativeSeperateCov& 0.550 +/- 0.122& 0.515 +/- 0.157& 0.641 +/- 0.070\\ 
+fishersLinearDiscriminent& 0.150 +/- 0.081& 0.160 +/- 0.066& 0.128 +/- 0.051\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+generativeSeperateCov& 0.550 +/- 0.122\\ 
+fishersLinearDiscriminent& 0.150 +/- 0.081\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+generativeSeperateCov& 0.550 +/- 0.122\\ 
+fishersLinearDiscriminent& 0.150 +/- 0.081\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+generativeSeperateCov& 0.550 +/- 0.122\\ 
+fishersLinearDiscriminent& 0.150 +/- 0.081\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+generativeSeperateCov& 0.550 +/- 0.122\\ 
+fishersLinearDiscriminent& 0.150 +/- 0.081\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+generativeSeperateCov& 0.550 +/- 0.122\\ 
+fishersLinearDiscriminent& 0.150 +/- 0.081\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+generativeSeperateCov& 0.550 +/- 0.122\\ 
+fishersLinearDiscriminent& 0.150 +/- 0.081\\ 
+algorithm&& B\\ 
+generativeSharedCov& 0.850 +/- 0.055\\ 
+generativeSeperateCov& 0.550 +/- 0.122\\ 
+fishersLinearDiscriminent& 0.150 +/- 0.081\\ 
+algorithm&& A&& B&& C&& ionosphere\\ 
+generativeSharedCov& 0.952 +/- 0.017& 0.850 +/- 0.055& 0.830 +/- 0.046& 0.855 +/- 0.059\\ 
+generativeSeperateCov& 0.515 +/- 0.038& 0.550 +/- 0.122& 0.515 +/- 0.157& 0.641 +/- 0.070\\ 
+fishersLinearDiscriminent& 0.054 +/- 0.014& 0.150 +/- 0.081& 0.160 +/- 0.066& 0.128 +/- 0.051\\ 
+logisticRegression& 0.485 +/- 0.038& 0.645 +/- 0.111& 0.700 +/- 0.114& 0.661 +/- 0.076\\ 
